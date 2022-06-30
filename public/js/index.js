@@ -5,7 +5,7 @@ const clockDay = function() {
     let min = date.getMinutes();
     let sec = date.getSeconds();
 
-    let day = date.getDay();
+    let day = date.getDate();
     let month = date.getMonth();
     let year = date.getFullYear();
   
@@ -23,6 +23,10 @@ const clockDay = function() {
 
     if (month < 10) {
         month = '0' + month;
+    }
+
+    if (month < 12) {
+        month = month + '1';
     }
   
     let displayHour = hour + ":" + min + ":" + sec;
