@@ -1,3 +1,13 @@
+@keyframes displayBubble {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+  }
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -58,7 +68,7 @@ html .container main, body .container main {
   margin: 0;
 }
 html .container main .presentation-container, body .container main .presentation-container {
-  height: 150px;
+  min-height: 180px;
   padding: 20px;
 }
 html .container main .presentation-container .presentation, body .container main .presentation-container .presentation {
@@ -68,16 +78,22 @@ html .container main .presentation-container .presentation, body .container main
   justify-content: end;
 }
 html .container main .presentation-container .presentation img, body .container main .presentation-container .presentation img {
-  height: 100%;
+  height: 180px;
 }
 html .container main .presentation-container .presentation .bubble, body .container main .presentation-container .presentation .bubble {
-  width: 20%;
-  height: 50%;
+  max-width: 30%;
+  padding: 0 20px 10px 20px;
   margin: 60px 50px 0 0;
-  padding: 10px;
+  font-family: "Aref Ruqaa", serif;
   background: #FFFFFF;
   position: relative;
   border-radius: 10px;
+  display: flex;
+  animation-duration: 7s;
+  animation-name: displayBubble;
+}
+html .container main .presentation-container .presentation .bubble p, body .container main .presentation-container .presentation .bubble p {
+  font-size: 1em;
 }
 html .container main .presentation-container .presentation .bubble::before, body .container main .presentation-container .presentation .bubble::before {
   content: "";

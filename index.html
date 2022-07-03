@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" media="screen" type="text/css" href="./public/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap" rel="stylesheet">
         <title>DJOGHLAL Mickaël - Développeur web de Dordogne (24) - Portfolio</title>
     </head>
     <body>
@@ -15,23 +18,23 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li>
-                        <img class="icon-nav" src="./public/images/svg/contacts.svg" alt="icon-profile"></object>
+                    <li id="profile-nav">
+                        <img class="icon-nav" id="profil-nav" src="./public/images/svg/contacts.svg" alt="icon-profile">
                     </li>
                     <li>
-                        <img class="icon-nav" src="./public/images/svg/education.svg" alt="icon-education"></object>
+                        <img class="icon-nav" id="education-nav" src="./public/images/svg/education.svg" alt="icon-education">
                     </li>
                     <li>
-                        <img class="icon-nav" src="./public/images/svg/career.svg" alt="icon-career"></object>
+                        <img class="icon-nav" id="career-nav" src="./public/images/svg/career.svg" alt="icon-career">
                     </li>
                     <li>
-                        <img class="icon-nav" src="./public/images/svg/language.svg" alt="icon-language"></object>
+                        <img class="icon-nav" id="language-nav" src="./public/images/svg/language.svg" alt="icon-language">
                     </li>
                     <li>
-                        <img class="icon-nav" src="./public/images/svg/mail.svg" alt="icon-mail"></object>
+                        <img class="icon-nav" id="mail-nav" src="./public/images/svg/mail.svg" alt="icon-mail">
                     </li>
                     <li>
-                        <img class="icon-nav" src="./public/images/svg/linkedin.svg" alt="icon-linkedin"></object>
+                        <img class="icon-nav" id="linkedin-nav" src="./public/images/svg/linkedin.svg" alt="icon-linkedin">
                     </li>
                 </ul>
                 <div class="time-date">
@@ -43,14 +46,14 @@
             <main>
                 <div class="presentation-container" id="presentation-container">
                     <div class="presentation">
-                        <div class="bubble"></div>
+                        <div class="bubble" id="bubble"></div>
                         <img src="./public/images/profil.png" alt="DJOGHLAL Mickaël" />
-                        
                     </div>
                 </div>
             </main>
         </div>
 
     <script src="public/js/index.js"></script>
+    <script src="public/js/dialogue.js"></script>
     </body>
 </html>
